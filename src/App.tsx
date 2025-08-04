@@ -6,15 +6,18 @@ import './App.css'
 
 
 function App() {
-  const [chatMessages, setChatMessages] = useState(JSON.parse(localStorage.getItem('messages')) || []);
+  const [chatMessages, setChatMessages] = useState(() => {
+    const stored = localStorage.getItem('messages');
+    return stored ? JSON.parse(stored) : [];
+  });
 
   useEffect(() => {
     localStorage.setItem('messages', JSON.stringify(chatMessages));
   }, [chatMessages]);
 
   const title = `${chatMessages.length === 0
-      ? 'Chatbot Project'
-      : `${chatMessages.length} Messages | Chatbot Project`
+    ? 'Chatbot Project'
+    : `${chatMessages.length} Messages | Chatbot Project`
     }`;
 
   return (
