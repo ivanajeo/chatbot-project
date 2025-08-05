@@ -5,6 +5,12 @@ A simple, interactive chatbot web application built with React, HTML, and CSS. T
 - Telling the current day of the week  
 - Rolling a virtual dice
 
+## Screenshot
+Below are the screenshots of the Mini Chatbot Project: <br />
+What the chatbot looks like when you first open the app and when the chatbot responding after a user types a message.<br />
+<br />
+<img src="images/screenshots/main-page.png" alt="Mini Chatbot Main Page" width="450" />
+<img src="images/screenshots/main-page-message.png" alt="Mini Chatbot Message" width="450" />
 ## [Live Demo Link](https://mini-chatbot-project.vercel.app/) 🚀
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-Online-blue?style=for-the-badge)](https://mini-chatbot-project.vercel.app/)
